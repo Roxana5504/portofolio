@@ -1,0 +1,12 @@
+{
+  "name": "roxana-marketing-portfolio",
+  "version": "4.0.0",
+  "description": "Roxana Cenusa — Marketing Manager and PPC portfolio",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
