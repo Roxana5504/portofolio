@@ -14,7 +14,7 @@ const projectData = {
       "Built travel budget features including budget tracking and trip selection.",
       "Worked on the product logic, interface and implementation rather than a marketing-only concept."
     ],
-    "image": "assets/tripfi.webp",
+    "image": "tripfi.webp",
     "imageAlt": "Actual screenshot of the TripFi travel budget web-mobile application",
     "imageNote": "Real screenshot supplied from the original application presentation.",
     "metrics": []
@@ -33,7 +33,7 @@ const projectData = {
       "Worked on WordPress implementation and site functionality.",
       "Organised service information and clear contact calls to action."
     ],
-    "image": "assets/blade-site.webp",
+    "image": "blade-site.webp",
     "imageAlt": "Actual screenshot of the BladeOnLawn WordPress website",
     "imageNote": "Real homepage screenshot from the completed BladeOnLawn website.",
     "metrics": []
@@ -52,7 +52,7 @@ const projectData = {
       "Worked on converting relevant search intent into enquiries.",
       "The supplied performance screenshot records 600 Google Ads conversions."
     ],
-    "image": "assets/blade-google-ads.webp",
+    "image": "blade-google-ads.webp",
     "imageAlt": "Actual Google Ads screenshot showing 600 conversions",
     "imageNote": "Actual account results. Conversions are platform-reported, and may include different conversion actions.",
     "metrics": [
@@ -84,7 +84,7 @@ const projectData = {
       "Monitored enquiry performance and the campaign’s search visibility.",
       "Campaigns were paused at the client’s request after demand exceeded operational capacity."
     ],
-    "image": "assets/budapest-google-ads.webp",
+    "image": "budapest-google-ads.webp",
     "imageAlt": "Actual anonymous Google Ads performance screenshot for Budapest cleaning services",
     "imageNote": "Account names, account IDs and private account information removed by excluding those screenshot regions.",
     "metrics": [
@@ -116,7 +116,7 @@ const projectData = {
       "Focused the campaigns on qualified enquiries for metal fabrication and metal construction services.",
       "Ads were paused after the business received more enquiries than it could accommodate."
     ],
-    "image": "assets/metal-google-ads.webp",
+    "image": "metal-google-ads.webp",
     "imageAlt": "Actual anonymous Google Ads performance screenshot for metal fabrication",
     "imageNote": "Account names, account IDs and private account information removed by excluding those screenshot regions.",
     "metrics": [
