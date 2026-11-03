@@ -1,34 +1,31 @@
-# Roxana Cenușă — Portfolio v4 (iPhone-compatible)
+# Roxana Portfolio — V5 (real projects)
 
-A complete, responsive marketing portfolio. All imagery, CSS, JavaScript and SVG icons are packaged locally; no icon fonts or emoji graphics are required. Google Fonts are an optional external typography enhancement.
+## Quick start
 
-## What changed in v4
-- Replaced all 62 decorative emoji-prone Unicode glyphs (asterisks, stars, arrows, checks and category icons) with inline SVG illustrations.
-- Expanded the platform SVG logos into inline paths, avoiding cross-browser SVG sprite references.
-- Put the portrait image entirely within the pink arch, with a 4px border and correct clipping, on desktop and mobile.
-- Updated the matching portrait in the About section.
-- Added a 180px Apple Touch icon and kept the existing favicon.
-- Added a dependency-free Node.js server for easy Render Web Service deployments.
-- Preserved the 10 case studies, filters, popup details and mobile navigation.
+This is the complete website, prepared for an existing Render deployment.
 
-## View locally
-- Double-click `index.html` (works as a static site), or
-- Install Node.js and run `npm start`, then open `http://localhost:3000`.
+- HTML: `index.html`
+- Styles: `styles.css`
+- Interactions: `script.js`
+- Verified project screenshots + personal photo: `assets/`
+- Render Node static server: `server.js`, `package.json`
 
-## Deploy to your current Render Web Service
-1. Upload/commit all files and the `assets` directory to your connected GitHub repository, keeping `index.html` at the project root.
-2. In Render, ensure **Runtime: Node**, **Build Command: `npm install`** and **Start Command: `npm start`**.
-3. Deploy the latest commit. Your existing `onrender.com` address remains the same when you update the same service.
+### Local preview
 
-## Alternative: static hosting
-Upload the *contents* of this folder, with `index.html` at the root, to Netlify Drop or another static host. Ignore `server.js` and `package.json` for static hosting.
+`npm start` then open the local URL printed by the server.
 
-## Site structure
-```
-index.html        Page content and inline SVGs
-styles.css        All desktop and mobile styles
-script.js         Portfolio filters, project dialogs, navigation
-assets/           Local images and browser icons
-server.js         Optional Render Node.js server
-package.json      Server start command
-```
+### Publish to Render
+
+Replace the contents of the current Render-connected repository with the contents of this folder (files at repository root), commit and push; Render can redeploy the same service. The public URL stays the same if the existing Render service is updated.
+
+### Projects in this edition
+
+1. TripFi — travel budget web-mobile app (real app screenshot)
+2. BladeOnLawn — WordPress website (real website screenshot)
+3. BladeOnLawn — Google Ads (real screenshot: 600 conversions)
+4. Budapest cleaning services — Google Ads (anonymised screenshot, 38 conversions)
+5. Metal fabrication business — Romania and Europe Google Ads (anonymised screenshot, 15 conversions)
+
+Private account data was not included in this public version: for the anonymous client screenshots, only the results chart region was retained. The original account-header content (client names, manager name and IDs) is not present in the output screenshots. Original screenshots are not included in this package.
+
+No additional former portfolio case studies are published in this edition. All marketing service/tool descriptions remain as general experience, not additional client case studies.

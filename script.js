@@ -1,64 +1,138 @@
 'use strict';
 const projectData = {
-  maisy: {
-    eyebrow:'SOCIAL GROWTH / META ADS', title:'Maisy & Dadda',
-    intro:'A social media growth project focused on finding a clearer content direction and testing new audiences across Facebook and Instagram.',
-    tags:['Meta Ads','Audience growth','Competitive research'],
-    points:['Audited Instagram and Facebook performance, including content formats and promoted posts.','Reviewed competitor content and identified stronger creative directions.','Built a four-week content roadmap and a structured new-audience Meta Ads test.','Planned tracking, exclusions and a testing approach to compare Facebook and Instagram audiences.']
+  "tripfi": {
+    "eyebrow": "WEB APPLICATION / JAVA",
+    "title": "TripFi — Travel Budget App",
+    "intro": "A personal software project: a web-mobile application created to make travel budgeting and spending easier to organise.",
+    "tags": [
+      "Java",
+      "Web-mobile app",
+      "Travel budgeting"
+    ],
+    "points": [
+      "Designed the application interface for a mobile-first experience.",
+      "Built travel budget features including budget tracking and trip selection.",
+      "Worked on the product logic, interface and implementation rather than a marketing-only concept."
+    ],
+    "image": "assets/tripfi.webp",
+    "imageAlt": "Actual screenshot of the TripFi travel budget web-mobile application",
+    "imageNote": "Real screenshot supplied from the original application presentation.",
+    "metrics": []
   },
-  homesellers: {
-    eyebrow:'SERVICE BUSINESS ADS / REAL ESTATE',title:'International Home Sellers',
-    intro:'Google Ads campaigns designed around people who want to sell their homes, across multiple European languages.',
-    tags:['Google Ads','Lead generation','Multilingual campaigns'],
-    points:['Researched seller-intent searches and filtered out buyer, rental and irrelevant traffic.','Structured ad groups, headlines and search terms by intent.','Adapted campaign language for Spanish, Portuguese, Italian, German, French and Polish.','Prepared negative keyword structures and practical campaign setup guidance.']
+  "blade-web": {
+    "eyebrow": "WEBSITE DESIGN / WORDPRESS",
+    "title": "BladeOnLawn — WordPress Website",
+    "intro": "Website design and functional implementation for a UK gardening and lawn care services company.",
+    "tags": [
+      "WordPress",
+      "Website design",
+      "Responsive layout"
+    ],
+    "points": [
+      "Designed the visual structure and website layout for the gardening service.",
+      "Worked on WordPress implementation and site functionality.",
+      "Organised service information and clear contact calls to action."
+    ],
+    "image": "assets/blade-site.webp",
+    "imageAlt": "Actual screenshot of the BladeOnLawn WordPress website",
+    "imageNote": "Real homepage screenshot from the completed BladeOnLawn website.",
+    "metrics": []
   },
-  ecommerce: {
-    eyebrow:'E-COMMERCE ADS / CONVERSION STRATEGY',title:'E-commerce Performance',
-    intro:'A performance-first approach to online stores, linking ad relevance, landing-page experience and conversion measurement.',
-    tags:['Google Ads','E-commerce','Conversion tracking'],
-    points:['Worked on paid search planning and campaign structures for e-commerce websites.','Considered product intent, conversion actions and store-to-ad-platform measurement.','Worked with platforms such as Shopify and Google Ads to support advertising workflows.','Focused on clean campaign structure and decisions grounded in useful performance data.']
+  "blade-ads": {
+    "eyebrow": "GOOGLE ADS / LOCAL SERVICE LEADS",
+    "title": "BladeOnLawn — Google Ads",
+    "intro": "Search advertising for a UK gardening company, focused on bringing in local enquiries.",
+    "tags": [
+      "Google Ads",
+      "Local services",
+      "Conversions"
+    ],
+    "points": [
+      "Managed Google Ads advertising for a gardening and lawn-care business.",
+      "Worked on converting relevant search intent into enquiries.",
+      "The supplied performance screenshot records 600 Google Ads conversions."
+    ],
+    "image": "assets/blade-google-ads.webp",
+    "imageAlt": "Actual Google Ads screenshot showing 600 conversions",
+    "imageNote": "Actual account results. Conversions are platform-reported, and may include different conversion actions.",
+    "metrics": [
+      [
+        "600",
+        "Conversions"
+      ],
+      [
+        "8.96K",
+        "Clicks"
+      ],
+      [
+        "6.33%",
+        "Conv. rate"
+      ]
+    ]
   },
-  'andre-email': {
-    eyebrow:'EMAIL MARKETING / OUTREACH',title:'Andre Mitchell — Outreach',
-    intro:'A targeted outreach programme promoting comedy performances to college teams, country clubs and private member communities.',
-    tags:['Email marketing','YAMM','Audience segments'],
-    points:['Developed short, personal-sounding outreach email sequences.','Worked with lists of college and venue contacts, with segmentation and data cleanup.','Planned message variations, follow-ups and A/B testing.','Connected messages with landing pages, a sizzle reel and booking calls to action.']
+  "budapest": {
+    "eyebrow": "GOOGLE ADS / BUDAPEST CLEANING SERVICES",
+    "title": "Cleaning Services — Budapest",
+    "intro": "Local Google Ads campaigns targeting Budapest for a cleaning services company. The client paused ads because the team could no longer fulfil the volume of enquiries.",
+    "tags": [
+      "Google Ads",
+      "Budapest",
+      "Local enquiries"
+    ],
+    "points": [
+      "Ran geographic targeting focused on Budapest, Hungary.",
+      "Monitored enquiry performance and the campaign’s search visibility.",
+      "Campaigns were paused at the client’s request after demand exceeded operational capacity."
+    ],
+    "image": "assets/budapest-google-ads.webp",
+    "imageAlt": "Actual anonymous Google Ads performance screenshot for Budapest cleaning services",
+    "imageNote": "Account names, account IDs and private account information removed by excluding those screenshot regions.",
+    "metrics": [
+      [
+        "38",
+        "Conversions"
+      ],
+      [
+        "70%",
+        "Impr. share"
+      ],
+      [
+        "120",
+        "Clicks"
+      ]
+    ]
   },
-  'andre-web': {
-    eyebrow:'WEBSITE CREATION / LEAD CAPTURE',title:'Andre Mitchell — Booking Pages',
-    intro:'An organised landing-page experience built to help event organisers explore the offer and request a quote.',
-    tags:['Wix','HTML / CSS','Formspree'],
-    points:['Created and improved pages for colleges, testimonials, the comedian’s story and quote requests.','Built HTML/CSS pages for deployment on Netlify and embedding within Wix.','Connected request forms with Formspree and a thank-you page.','Worked on page navigation, embedded browsing behaviour and clearer lead-generation pathways.']
-  },
-  rhapsody: {
-    eyebrow:'YOUTUBE ADS / VIDEO MARKETING',title:'Rhapsody Digital Entertainment',
-    intro:'A multi-channel publishing and paid video project for educational entertainment content.',
-    tags:['YouTube Shorts','Social media','Analytics'],
-    points:['Developed publishing plans for long-form episodes and short-form clips.','Coordinated distribution plans across YouTube, Instagram, Facebook, TikTok and other channels.','Worked on a US-focused YouTube Shorts advertising setup and creative selection.','Structured recurring reporting across video and social performance metrics.']
-  },
-  danny: {
-    eyebrow:'GOOGLE ADS / LOCAL SERVICES',title:"Danny's Gardening",
-    intro:'Search advertising setup for a UK gardening service, with attention to locally relevant leads and accurate tracking.',
-    tags:['Google Ads','Service business','Conversion tracking'],
-    points:['Prepared a search advertising structure built around gardening service intent.','Configured conversion measurement and campaign settings.','Supported the first stage of campaign launch and post-launch monitoring.','Focused on attracting relevant local service enquiries rather than broad, low-intent traffic.']
-  },
-  melange: {
-    eyebrow:'BRAND STRATEGY / SOCIAL GROWTH',title:'The Band Mélange',
-    intro:'A growth strategy and creative content roadmap for a music brand with an eclectic sound and story.',
-    tags:['Growth strategy','Content planning','Music'],
-    points:['Prepared a 90-day marketing and social media growth plan.','Organised content themes, publishing ideas and audience development priorities.','Recommended a practical creative workflow for consistent brand storytelling.','Connected platform-specific content ideas with longer-term brand awareness goals.']
-  },
-  agents: {
-    eyebrow:'B2B GOOGLE ADS / PROPERTY',title:'Real Estate Agent Recruitment',
-    intro:'Multilingual search planning to connect sellers with real estate professionals and property agencies.',
-    tags:['Google Ads','B2B lead generation','Six languages'],
-    points:['Structured campaigns in Spanish, Polish, Portuguese, French, German and Italian.','Researched seller and agent-recruitment search intent, with exclusion planning.','Wrote and localised search ad headlines and supporting copy.','Developed ad group structures with clear English naming for easier management.']
-  },
-  tracking: {
-    eyebrow:'TECHNICAL MARKETING / ANALYTICS',title:'Conversion Tracking Systems',
-    intro:'Technical marketing work that makes conversion signals more dependable across websites, analytics tools and ad platforms.',
-    tags:['GTM','GA4','Microsoft Ads UET'],
-    points:['Worked with Google Tag Manager and Google Analytics 4 event measurement.','Implemented and troubleshot conversion tags, including Microsoft Ads UET.','Investigated tracking across websites and domains and debugged misconfigured tags.','Improved the clarity of the connection between forms, on-site actions and advertising reports.']
+  "metal": {
+    "eyebrow": "GOOGLE ADS / METAL FABRICATION LEAD GENERATION",
+    "title": "Metal Fabrication — Google Ads",
+    "intro": "One search campaign targeting Romania and another targeting the rest of Europe for a metal fabrication and metal construction company. Campaigns ran for approximately one month.",
+    "tags": [
+      "Google Ads",
+      "B2B manufacturing",
+      "Romania & Europe"
+    ],
+    "points": [
+      "Structured separate targeting for Romanian and European search demand.",
+      "Focused the campaigns on qualified enquiries for metal fabrication and metal construction services.",
+      "Ads were paused after the business received more enquiries than it could accommodate."
+    ],
+    "image": "assets/metal-google-ads.webp",
+    "imageAlt": "Actual anonymous Google Ads performance screenshot for metal fabrication",
+    "imageNote": "Account names, account IDs and private account information removed by excluding those screenshot regions.",
+    "metrics": [
+      [
+        "15",
+        "Conversions"
+      ],
+      [
+        "11.06%",
+        "CTR"
+      ],
+      [
+        "921",
+        "Clicks"
+      ]
+    ]
   }
 };
 const filterButtons = [...document.querySelectorAll('.filter')];
@@ -66,12 +140,15 @@ const projectCards = [...document.querySelectorAll('.project-card')];
 filterButtons.forEach(button => button.addEventListener('click', () => {
   const selected=button.dataset.filter;
   filterButtons.forEach(b=>{const isSelected=b===button;b.classList.toggle('active',isSelected);b.setAttribute('aria-pressed',String(isSelected));});
-  projectCards.forEach(card=>{card.hidden=selected!=='all'&&card.dataset.category!==selected;});
+  projectCards.forEach(card=>{card.hidden=selected!=='all'&&!card.dataset.category.split(/\s+/).includes(selected);});
 }));
 const dialog=document.getElementById('case-dialog');
 let dialogTrigger=null;
 const tags=document.getElementById('case-tags');
 const points=document.getElementById('case-points');
+const caseImage=document.getElementById('case-image');
+const caseImageNote=document.getElementById('case-image-note');
+const caseMetrics=document.getElementById('case-metrics');
 projectCards.forEach(card=>card.querySelector('.project-open').addEventListener('click',event=>{
   const data=projectData[card.dataset.project];if(!data)return;
   dialogTrigger=event.currentTarget;
@@ -80,6 +157,11 @@ projectCards.forEach(card=>card.querySelector('.project-open').addEventListener(
   document.getElementById('case-intro').textContent=data.intro;
   tags.replaceChildren(...data.tags.map(tag=>{const el=document.createElement('span');el.textContent=tag;return el;}));
   points.replaceChildren(...data.points.map(point=>{const el=document.createElement('li');el.textContent=point;return el;}));
+  caseImage.src=data.image;
+  caseImage.alt=data.imageAlt;
+  caseImageNote.textContent=data.imageNote;
+  caseMetrics.replaceChildren(...data.metrics.map(([value,label])=>{const box=document.createElement('div');const number=document.createElement('strong');number.textContent=value;const copy=document.createElement('span');copy.textContent=label;box.append(number,copy);return box;}));
+  caseMetrics.hidden=data.metrics.length===0;
   if(typeof dialog.showModal==='function')dialog.showModal();
 }));
 document.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
