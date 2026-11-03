@@ -171,3 +171,37 @@
  .dialog-metrics span{font-size:8px}
  .dialog-proof{margin-top:17px}
 }
+
+/* WHERE TO FIND ME — BRAND PROFILE CARDS */
+.find-me-section{background:#eeebea;padding:83px 45px 89px;border-top:1px solid var(--line);position:relative;overflow:hidden}
+.find-me-topline{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:10px;font-weight:800;letter-spacing:.1em;color:#5f5d5b}
+.find-me-topline>span:first-child{display:flex;align-items:center;gap:10px}
+.find-me-dot{height:9px;width:9px;border-radius:50%;background:var(--pink);display:inline-block;box-shadow:0 0 0 4px #f04e9323}
+.find-me-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin:29px 0 40px}
+.find-me-intro h2{font-family:var(--display);font-size:clamp(55px,7.5vw,102px);line-height:.91;font-weight:500;letter-spacing:-.075em;margin:0}
+.find-me-intro h2 em{font-style:normal;color:var(--pink)}
+.find-me-intro h2 em span{color:var(--ink)}
+.find-me-intro p{font-size:13px;line-height:1.7;max-width:260px;color:#5c5958;margin:0 0 5px}
+.find-me-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.find-me-card{background:#f9f7f4;border:1px solid #292727;border-radius:13px;padding:17px 18px 19px;min-height:229px;display:flex;flex-direction:column;align-items:stretch;position:relative;box-shadow:0 0 0 transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.find-me-card:hover{transform:translateY(-5px);box-shadow:5px 6px 0 #f04e93;background:#fff}
+.find-me-card-top{display:flex;align-items:start;justify-content:space-between;gap:10px;font-size:9px;color:#817c79;letter-spacing:.08em;font-weight:800}
+.find-me-card-arrow{width:30px;height:30px;border:1px solid #bab6b1;border-radius:50%;display:grid;place-items:center;color:var(--ink);transition:background .2s,border-color .2s}
+.find-me-card-arrow svg{width:14px;height:14px}
+.find-me-card:hover .find-me-card-arrow{background:var(--pink);border-color:var(--pink)}
+.find-me-card-logo{width:66px;height:66px;border-radius:17px;display:flex;align-items:center;justify-content:center;margin:6px 0 25px;flex-shrink:0}
+.find-me-card-logo img{display:block;width:35px;height:35px;object-fit:contain}
+.find-me-instagram{background:linear-gradient(45deg,#ffb341 0%,#ef286a 48%,#8a3bdb 100%)}
+.find-me-facebook{background:#1877f2}
+.find-me-facebook img{width:26px;height:35px}
+.find-me-linkedin{background:#0a66c2}
+.find-me-linkedin img{width:33px;height:33px}
+.find-me-upwork{background:#14a800}
+.find-me-upwork img{width:43px;height:33px}
+.find-me-card-bottom{display:flex;flex-direction:column;gap:4px;margin-top:auto;min-width:0}
+.find-me-card-bottom strong{font-family:var(--display);font-size:23px;font-weight:600;letter-spacing:-.055em;line-height:1.1}
+.find-me-card-bottom>span{font-size:10px;color:#77716e;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:1100px){.find-me-section{padding-left:32px;padding-right:32px}.find-me-card{padding:16px 14px;min-height:211px}.find-me-card-bottom strong{font-size:21px}}
+@media(max-width:820px){.find-me-section{padding:70px 28px 75px}.find-me-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.find-me-intro{align-items:start}.find-me-intro h2{font-size:clamp(55px,8.8vw,78px)}.find-me-intro p{max-width:205px}.find-me-card{min-height:210px;padding:18px}.find-me-card-logo{margin-bottom:20px}}
+@media(max-width:570px){.find-me-section{padding:66px 18px 69px}.find-me-topline{font-size:9px}.find-me-topline>span:last-child{display:none}.find-me-intro{display:block;margin:27px 0 29px}.find-me-intro h2{font-size:clamp(48px,12.4vw,73px)}.find-me-intro p{max-width:270px;margin:19px 0 0;font-size:12px}.find-me-grid{gap:10px}.find-me-card{min-height:184px;padding:13px 12px 15px;border-radius:11px}.find-me-card-top{font-size:8px;letter-spacing:.03em}.find-me-card-arrow{width:26px;height:26px}.find-me-card-logo{height:52px;width:52px;border-radius:14px;margin:9px 0 18px}.find-me-card-logo img{height:30px;width:30px}.find-me-facebook img{width:22px}.find-me-upwork img{width:36px}.find-me-card-bottom strong{font-size:20px}.find-me-card-bottom>span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.find-me-card,.find-me-card-arrow{transition:none}}
