@@ -205,3 +205,26 @@
 @media(max-width:820px){.find-me-section{padding:70px 28px 75px}.find-me-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.find-me-intro{align-items:start}.find-me-intro h2{font-size:clamp(55px,8.8vw,78px)}.find-me-intro p{max-width:205px}.find-me-card{min-height:210px;padding:18px}.find-me-card-logo{margin-bottom:20px}}
 @media(max-width:570px){.find-me-section{padding:66px 18px 69px}.find-me-topline{font-size:9px}.find-me-topline>span:last-child{display:none}.find-me-intro{display:block;margin:27px 0 29px}.find-me-intro h2{font-size:clamp(48px,12.4vw,73px)}.find-me-intro p{max-width:270px;margin:19px 0 0;font-size:12px}.find-me-grid{gap:10px}.find-me-card{min-height:184px;padding:13px 12px 15px;border-radius:11px}.find-me-card-top{font-size:8px;letter-spacing:.03em}.find-me-card-arrow{width:26px;height:26px}.find-me-card-logo{height:52px;width:52px;border-radius:14px;margin:9px 0 18px}.find-me-card-logo img{height:30px;width:30px}.find-me-facebook img{width:22px}.find-me-upwork img{width:36px}.find-me-card-bottom strong{font-size:20px}.find-me-card-bottom>span{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.find-me-card,.find-me-card-arrow{transition:none}}
+
+/* Added project only: Andre Mitchell website and two real-image gallery. */
+.project-image.visual-andre{background:linear-gradient(135deg,#e9ded7 0%,#f9e9e8 53%,#eeb3c9 100%)}
+.visual-andre .case-image-window{height:76%;width:97%;margin-right:9%;border:2px solid #282326;box-shadow:7px 9px 0 #34262b33;background:#f4f0eb}
+.visual-andre .case-image-window img{object-fit:cover;object-position:center top}
+.visual-andre .case-phone-preview{position:absolute;z-index:3;right:15px;bottom:29px;height:154px;width:74px;border:5px solid #221c1f;border-radius:14px;overflow:hidden;box-shadow:6px 7px 0 #201a1c30;background:#ece5df;transform:rotate(6deg);pointer-events:none}
+.visual-andre .case-phone-preview img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}
+.dialog-proof[hidden],.dialog-gallery[hidden]{display:none!important}
+.dialog-gallery{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,.72fr);gap:13px;margin-top:24px;align-items:stretch}
+.gallery-shot{display:flex;flex-direction:column;gap:11px;min-width:0;margin:0;padding:12px;border:1px solid #cfc8c9;border-radius:12px;background:#ece7e5}
+.gallery-media{flex:1;min-width:0;min-height:0;display:flex;justify-content:center;align-items:center;overflow:hidden;border-radius:7px;background:#fff}
+.gallery-media img{display:block;max-width:100%;max-height:420px;width:100%;height:auto;object-fit:contain}
+.gallery-mobile .gallery-media img{max-width:195px;max-height:420px;width:auto}
+.gallery-shot figcaption{display:flex;gap:9px;align-items:baseline;font-size:10px;line-height:1.5;font-weight:650;color:#514e4e}
+.gallery-shot figcaption span:first-child{white-space:nowrap;color:#dc4384;font-size:10px;font-weight:800}
+@media(max-width:570px){
+ .visual-andre .case-image-window{width:94%;height:77%;margin-right:6%}
+ .visual-andre .case-phone-preview{height:122px;width:59px;right:8px;bottom:21px;border-width:4px;border-radius:11px}
+ .dialog-gallery{display:flex;flex-direction:column;gap:11px;margin-top:17px}
+ .gallery-shot{padding:9px;gap:8px}
+ .gallery-mobile .gallery-media img{max-height:480px;max-width:205px}
+ .gallery-shot figcaption{font-size:9px}
+}

@@ -134,6 +134,38 @@ const projectData = {
       ]
     ]
   }
+  ,"andre-web": {
+    "eyebrow": "WEBSITE DESIGN / WIX + EMBEDDED HTML",
+    "title": "Andre Mitchell — Responsive Comedy Website",
+    "intro": "A fully functional website for stand-up comedian Andre Mitchell, built in Wix with custom HTML embedded code on a tight timeline. Designed to work beautifully across desktop and mobile.",
+    "tags": [
+        "Wix",
+        "HTML / CSS",
+        "Responsive design",
+        "Booking enquiry form",
+        "YouTube embed"
+    ],
+    "points": [
+        "Designed and implemented a complete multi-section website using custom HTML embedded in Wix.",
+        "Made the layout responsive for both desktop and mobile devices.",
+        "Integrated a YouTube comedy trailer with autoplay behaviour on site visit.",
+        "Implemented a functional booking / quote-request form to capture event enquiries.",
+        "Delivered the website in a short timeframe while keeping its visual identity and navigation consistent."
+    ],
+    "images": [
+        {
+            "src": "andre-desktop.webp",
+            "alt": "Desktop screenshot of the Andre Mitchell comedy website showing the homepage, quote buttons and YouTube trailer",
+            "caption": "DESKTOP VIEW — Homepage, calls to action and embedded YouTube trailer"
+        },
+        {
+            "src": "andre-mobile.webp",
+            "alt": "Mobile screenshot of the Andre Mitchell website showing the Why Andre section and a responsive feature card",
+            "caption": "MOBILE VIEW — Responsive layout and content cards"
+        }
+    ],
+    "metrics": []
+}
 };
 const filterButtons = [...document.querySelectorAll('.filter')];
 const projectCards = [...document.querySelectorAll('.project-card')];
@@ -149,6 +181,8 @@ const points=document.getElementById('case-points');
 const caseImage=document.getElementById('case-image');
 const caseImageNote=document.getElementById('case-image-note');
 const caseMetrics=document.getElementById('case-metrics');
+const caseGallery=document.getElementById('case-gallery');
+const caseProof=document.querySelector('.dialog-proof');
 projectCards.forEach(card=>card.querySelector('.project-open').addEventListener('click',event=>{
   const data=projectData[card.dataset.project];if(!data)return;
   dialogTrigger=event.currentTarget;
@@ -157,9 +191,35 @@ projectCards.forEach(card=>card.querySelector('.project-open').addEventListener(
   document.getElementById('case-intro').textContent=data.intro;
   tags.replaceChildren(...data.tags.map(tag=>{const el=document.createElement('span');el.textContent=tag;return el;}));
   points.replaceChildren(...data.points.map(point=>{const el=document.createElement('li');el.textContent=point;return el;}));
-  caseImage.src=data.image;
-  caseImage.alt=data.imageAlt;
-  caseImageNote.textContent=data.imageNote;
+  // Preserve the original single-image proof for existing projects.
+  // Show a two-image desktop/mobile gallery only when the project supplies one.
+  const galleryImages=Array.isArray(data.images)?data.images:[];
+  if(galleryImages.length){
+    caseProof.hidden=true;
+    caseGallery.hidden=false;
+    caseGallery.replaceChildren(...galleryImages.map((item,i)=>{
+      const figure=document.createElement('figure');
+      figure.className='gallery-shot '+(i===0?'gallery-desktop':'gallery-mobile');
+      const frame=document.createElement('div');frame.className='gallery-media';
+      const img=document.createElement('img');img.src=item.src;img.alt=item.alt;
+      img.loading='lazy';img.decoding='async';
+      frame.appendChild(img);
+      const caption=document.createElement('figcaption');
+      const index=document.createElement('span');index.textContent=String(i+1).padStart(2,'0')+' / '+String(galleryImages.length).padStart(2,'0');
+      const copy=document.createElement('span');copy.textContent=item.caption;
+      caption.append(index,copy);
+      figure.append(frame,caption);
+      return figure;
+    }));
+    caseImage.removeAttribute('src');
+  }else{
+    caseGallery.hidden=true;
+    caseGallery.replaceChildren();
+    caseProof.hidden=false;
+    caseImage.src=data.image;
+    caseImage.alt=data.imageAlt;
+    caseImageNote.textContent=data.imageNote;
+  }
   caseMetrics.replaceChildren(...data.metrics.map(([value,label])=>{const box=document.createElement('div');const number=document.createElement('strong');number.textContent=value;const copy=document.createElement('span');copy.textContent=label;box.append(number,copy);return box;}));
   caseMetrics.hidden=data.metrics.length===0;
   if(typeof dialog.showModal==='function')dialog.showModal();
